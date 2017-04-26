@@ -1,0 +1,14 @@
+﻿<h2> Hello Rails...</h2>
+
+
+<%= form_tag("/search", method: "get") do %>
+<%= label_tag(:q, "Search for:") %>
+<%= text_field_tag(:q) %><br />
+
+
+<%= check_box_tag(:pet_dog) %>
+<%= label_tag(:pet_dog, "I own a dog") %>
+<%= check_box_tag(:pet_cat) %><br />
+<%= label_tag(:pet_cat, "I own a cat") %>
+<%= submit_tag("Search") %><br />
+<% end %>
